@@ -1,1 +1,0 @@
-# zaoblako-typescript
