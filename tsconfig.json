@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "target": "es6", // задает версию стандарта js, в которую будет компилироваться код ts
+      "module": "amd", // Устанавливает модульную систему для программы
+      "moduleResolution": "node",
+      "noEmitOnError": true, // с ошибками не компилировать
+      "removeComments": true, // удаляет комментарии
+      "outDir": "js", // компилировать в папку
+      "sourceMap": true, // браузер будет ссылаться в консоли на ts, а не js файл
+      "outFile": "dist/index.js" // название выходного файла
+    },
+}
