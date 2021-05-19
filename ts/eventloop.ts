@@ -1,5 +1,5 @@
 // Event Loop =======================
-export function callEventLoop(): void {
+export function eventLoop(): void {
     console.log('Показать событие 1');
     // setTimeout принимает функцию коллбэк в качестве 1-го параметра и время в мс в качестве 2-го параметра
     setTimeout(() => { 

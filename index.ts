@@ -1,27 +1,27 @@
-import { callEventLoop } from './ts/eventloop';
-import { callPromise } from './ts/promise';
-import { callAsync } from './ts/async';
-import { callAnotherAsync } from './ts/async';
-import { callObservable } from './ts/observable';
+import { eventLoop } from './ts/eventloop';
+import { usePromise } from './ts/promise';
+import { async } from './ts/async';
+import { anotherAsync } from './ts/async';
+import { useObservable } from './ts/observable';
 import { User } from './ts/example';
 
 
 // Event Loop =================================
 
-callEventLoop();
+eventLoop();
 
 // Observable =================================
 
-// callObservable();
+// useObservable();
 
 // Promise =====================================
 
-callPromise();
+usePromise();
 
 // async/await =================================
 
-callAsync();
-callAnotherAsync()
+async();
+anotherAsync()
 
 // Class =======================================
 

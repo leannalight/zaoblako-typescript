@@ -8,7 +8,7 @@ function delay(milliseconds: number, count: number): Promise<number> {
 }
 
 // async функция всегда возвращает Promise
-export async function callAsync(): Promise<void> {
+export async function async(): Promise<void> {
     console.log("Hello");
 
     for (let i = 0; i < 5; i++) {
@@ -21,7 +21,7 @@ export async function callAsync(): Promise<void> {
 }
 
 // С использованием конструкции .then/.catch
-export function callAnotherAsync(): void {
+export function anotherAsync(): void {
     (async function getData() {
         return fetch('https://api.exchangerate-api.com/v4')
     })()

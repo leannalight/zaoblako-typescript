@@ -2,7 +2,7 @@
 import { Observable } from 'rxjs';
 
 // Observable пример 1 ===========================
-export function callObservable(element: any, eventName: string) {
+export function useObservable(element: any, eventName: string) {
     return new Observable(observer => {
         // Создаем обработчик событий, отправляющий данные подписчику
         let handler = event => observer.next(event);

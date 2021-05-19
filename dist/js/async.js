@@ -36,7 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 exports.__esModule = true;
-exports.callAnotherAsync = exports.callAsync = void 0;
+exports.anotherAsync = exports.async = void 0;
 // async/await =========================
 function delay(milliseconds, count) {
     return new Promise(function (resolve) {
@@ -46,7 +46,7 @@ function delay(milliseconds, count) {
     });
 }
 // async функция всегда возвращает Promise
-function callAsync() {
+function async() {
     return __awaiter(this, void 0, void 0, function () {
         var i, count;
         return __generator(this, function (_a) {
@@ -72,9 +72,9 @@ function callAsync() {
         });
     });
 }
-exports.callAsync = callAsync;
+exports.async = async;
 // С использованием конструкции .then/.catch
-function callAnotherAsync() {
+function anotherAsync() {
     (function getData() {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
@@ -88,4 +88,4 @@ function callAnotherAsync() {
         console.log(err); // промис отклонен
     });
 }
-exports.callAnotherAsync = callAnotherAsync;
+exports.anotherAsync = anotherAsync;

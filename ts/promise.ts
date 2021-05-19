@@ -1,5 +1,5 @@
 // Promise ========================
-export function callPromise(): void {
+export function usePromise(): void {
     const promise = new Promise<string>((resolve, reject): void => {
         const random: boolean = Math.random() > 0.3 ? true : false;
         if (random) {

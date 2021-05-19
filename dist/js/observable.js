@@ -1,10 +1,10 @@
 "use strict";
 exports.__esModule = true;
-exports.callObservable = void 0;
+exports.useObservable = void 0;
 // Observable =================
 var rxjs_1 = require("rxjs");
 // Observable пример 1 ===========================
-function callObservable(element, eventName) {
+function useObservable(element, eventName) {
     return new rxjs_1.Observable(function (observer) {
         // Создаем обработчик событий, отправляющий данные подписчику
         var handler = function (event) { return observer.next(event); };
@@ -17,7 +17,7 @@ function callObservable(element, eventName) {
         };
     });
 }
-exports.callObservable = callObservable;
+exports.useObservable = useObservable;
 // Observable пример 2 ===========================
 // Создаем Observable, который начнет прослушивать обновления геолокации
 // когда потребитель подписывается.

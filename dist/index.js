@@ -6,14 +6,14 @@ var async_1 = require("../ts/async");
 var async_2 = require("../ts/async");
 var example_1 = require("../ts/example");
 // Event Loop =================================
-eventloop_1.callEventLoop();
+eventloop_1.eventLoop();
 // Observable =================================
-// callObservable();
+// useObservable();
 // Promise =====================================
-promise_1.callPromise();
+promise_1.usePromise();
 // async/await =================================
-async_1.callAsync();
-async_2.callAnotherAsync();
+async_1.async();
+async_2.anotherAsync();
 // Class =======================================
 var user = new example_1.User(); // определяем объект для класса User - user
 user.name = "Tom"; // По имени объекта мы можем обращаться к полям класса

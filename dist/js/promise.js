@@ -1,8 +1,8 @@
 "use strict";
 exports.__esModule = true;
-exports.callPromise = void 0;
+exports.usePromise = void 0;
 // Promise ========================
-function callPromise() {
+function usePromise() {
     var promise = new Promise(function (resolve, reject) {
         var random = Math.random() > 0.3 ? true : false;
         if (random) {
@@ -19,4 +19,4 @@ function callPromise() {
         console.log('rejected', error); // отклонено -> выводм ошибку в консоль
     });
 }
-exports.callPromise = callPromise;
+exports.usePromise = usePromise;
